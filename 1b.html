@@ -1,0 +1,129 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        table.headerContainer{
+            width: 100%;
+            background: #bcf7ff;
+            font-family: sans-serif;
+        }
+        h1.mainHeaderText{
+            margin-left: 20px;
+        }
+        td.rightHeaderPart{
+            padding-right: 20px;
+            text-align: right;
+        }
+        table.imgContainer{
+            width: 100%;
+            text-align: center;
+            padding-top: 50px;
+        }
+        td.imgCell{
+            mix-blend-mode: multiply;
+        }
+        body{
+            background: #c5ffff
+        }
+        table.inputContainer {
+            padding-left: 45%;
+        }
+        table#result-table{
+            width: 100%;
+            background: #bcf7ff;
+            transition-property: background-color;
+            transition-duration: 3s;
+        }
+    </style>
+</head>
+<body>
+    <table class="headerContainer">
+        <tr>
+            <td><h1 class="mainHeaderText">Web. Лабораторная работа №1.</h1></td>
+            <td class="rightHeaderPart">
+                <h2>Вариант № 13101</h2>
+                <h3>Бритков Анатолий, P3213</h3>
+            </td>
+        </tr>
+    </table>
+    <table class="imgContainer">
+        <td class="imgCell"><img src="function.png" width="300"></td>
+    </table>
+    <table id="inputX" class="inputContainer">
+        <td>X:</td>
+        <td class="inputCell">
+            <input class="x-button" type="button" name="x" onclick="chooseX(this)" value="-4">
+            <input class="x-button" type="button" name="x" onclick="chooseX(this)" value="-3">
+            <input class="x-button" type="button" name="x" onclick="chooseX(this)" value="-2">
+            <input class="x-button" type="button" name="x" onclick="chooseX(this)" value="-1">
+            <input class="x-button" type="button" name="x" onclick="chooseX(this)" value="0">
+            <input class="x-button" type="button" name="x" onclick="chooseX(this)" value="1">
+            <input class="x-button" type="button" name="x" onclick="chooseX(this)" value="2">
+            <input class="x-button" type="button" name="x" onclick="chooseX(this)" value="3">
+            <input class="x-button" type="button" name="x" onclick="chooseX(this)" value="4">
+
+
+        </td>
+    </table>
+    <table id="inputY" class="inputContainer">
+        <td>Y:</td>
+        <td class="inputCell">
+            <input type="text" name="Y" id="input2">
+        </td>
+    </table>
+    <table id="inputR" class="inputContainer">
+        <td>R:</td>
+        <td class="inputCell" name="rRadio">
+            <label>
+                <input type="radio" name="r" value="1">
+                1
+            </label>
+            <label>
+                <input type="radio" name="r" value="2">
+                2
+            </label>
+            <label>
+                <input type="radio" name="r" value="3">
+                3
+            </label>
+            <label>
+                <input type="radio" name="r" value="4">
+                4
+            </label>
+            <label>
+                <input type="radio" name="r" value="5">
+                5
+            </label>
+        </td>
+        <tr>
+            <td colspan="100%" id="buttonContainer">
+                <button class="submit-button" type="submit" onclick="submit()">Let's go!</button>
+            </td>
+        </tr>
+    </table>
+    <table id="result-table">
+        <tr class="table-header">
+            <th>X</th>
+            <th>Y</th>
+            <th>R</th>
+            <th>Локальное время</th>
+            <th>Время исполнения</th>
+            <th>Попадание</th>
+        </tr>
+    </table>
+    <script type="text/javascript">
+        document.ondragstart = test;
+        document.onselectstart = test;
+        document.oncontextmenu = test;
+        function test() {
+            return false;
+        }
+    </script>
+</body>
+
+</html>

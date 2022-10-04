@@ -1,0 +1,11 @@
+2022-09-23 20:55:46,853 - __main__ - INFO - 
+        expected password a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3
+
+        received password a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3
+        
+2022-09-23 22:04:05,670 - __main__ - INFO - 
+            expected password a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3
+
+            received password a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3
+            
+2022-09-23 22:23:57,554 - __main__ - INFO - program switched on
