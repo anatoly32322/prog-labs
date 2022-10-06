@@ -1,6 +1,5 @@
 import asyncio
 import os
-import stat
 import hashlib
 from multiprocessing import Process, Value
 from time import sleep
@@ -84,8 +83,9 @@ async def main():
                 '''
             )
         elif mode == 'switch off':
-            is_working.value = False
-            logger.info('program switched off')
+            if Manager.check_password():
+                is_working.value = False
+                logger.info('program switched off')
         elif mode == 'switch on':
             is_working.value = True
             logger.info('program switched on')
